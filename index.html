@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<!--
+	Directive by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Portfolio Izan Ortega García - IAW ASIR2 U-TAD</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+				<span class="logo icon fa-paper-plane"></span>
+				<h1>Hola! Me llamo Izan Ortega García</h1>
+				<p>Este es mi portfolio para la clase de IAW, ASIR2, U-TAD
+				<br />
+				Aquí podrás encontrar información sobre mi Experiencia Laboral, Redes y Contacto...</p>
+                <br><br>
+			</div>
+<br>
+<footer class="major container medium">
+	<h3>Accede a mi CV</h3>
+	<p>Quizás quieras ver cuales son mis habilidades profesionales!</p>
+	<ul class="actions special">
+		<li><a href="cv.html" target="_blank" class="button">ACCEDER A CV</a></li>
+	</ul>
+</footer>
+<br>
+		<!-- Main -->
+			<div id="main">
+				<header class="major container medium">
+					<h2>He trabajado en diferentes
+					<br />
+					sitios, que pueden, 
+					<br />
+					o no, interesarte.</h2>
+				</header>
+				<div class="box alt container">
+					<section class="feature left">
+						<a href="#" class="image icon solid fa-signal"><img src="images/pic01.jpg" alt="" /></a>
+						<div class="content">
+							<h3>FIVERR</h3>
+							<p>Como productor musical en Fiverr, tengo el privilegio de transformar ideas en experiencias sonoras memorables. Mi enfoque está centrado en colaborar con artistas, compositores y creadores de contenido para dar vida a su visión musical, adaptándome a diversos géneros y estilos.</p>
+						</div>
+					</section>
+					<section class="feature right">
+						<a href="#" class="image icon solid fa-code"><img src="images/pic02.jpg" alt="" /></a>
+						<div class="content">
+							<h3>DESARROLLO</h3>
+							<p>Cada trabajo que realizo en Fiverr es una oportunidad para explorar nuevas ideas y colaborar con talentos de todo el mundo. Valoro profundamente la comunicación abierta y efectiva, lo que me permite comprender las necesidades y deseos de mis clientes.</p>
+						</div>
+					</section>
+					<section class="feature left">
+						<a href="#" class="image icon solid fa-mobile-alt"><img src="images/pic03.jpg" alt="" /></a>
+						<div class="content">
+							<h3>ATLANTIC RECORDS</h3>
+							<p>Mi viaje como productor musical comenzó en Fiverr, donde tuve la oportunidad de colaborar con artistas y creadores de todo el mundo. Desde el primer proyecto, me dediqué a ofrecer un servicio excepcional y a construir relaciones sólidas con mis clientes. A través de la creatividad y el compromiso con la calidad, logré acumular numerosas reseñas positivas que reflejan mi pasión por la música y mi profesionalismo.</p>
+						</div>
+					</section>
+				</div>
+
+				<footer class="major container medium">
+					<h3>ÉCHALE VALENTÍA!</h3>
+					<p>Si te convence mi trayectoria profesional en el mundo de la música, no dudes en escribirme un mensaje! Quizás podamos trabajar juntos!</p>
+					<ul class="actions special">
+						<li><a href="redes.html" target="_blank" class="button">MANDAR UN MENSAJE</a></li>
+					</ul>
+				</footer>
+
+			</div>
+
+		<!-- Footer -->
+		<div id="footer">
+			<div class="container medium">
+				<header class="major last">
+					<h2>¿Alguna pregunta o comentario?</h2>
+				</header>
+				<p>¡Crea un ticket en mi página y yo te contestaré lo más pronto posible!</p>
+				<p>También puedes contactarme por mis redes sociales (ejemplo redes).</p>
+				<form method="post" action="#">
+					<div class="row">
+						<div class="col-6 col-12-mobilep">
+							<input type="text" name="name" placeholder="Name" />
+						</div>
+						<div class="col-6 col-12-mobilep">
+							<input type="email" name="email" placeholder="Email" />
+						</div>
+						<div class="col-12">
+							<textarea name="message" placeholder="Message" rows="6"></textarea>
+						</div>
+						<div class="col-12">
+							<ul class="actions special">
+								<li>
+									<input type="submit" value="Enviar Ticket" id="submitButton" onclick="changeButtonText(event)" />
+								</li>
+							</ul>
+						</div>
+					</div>
+				</form>
+				<ul class="copyright">
+					<li>© Untitled. All rights reserved.</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<script>
+		function changeButtonText(event) {
+			event.preventDefault(); // Prevenir el envío del formulario
+			var button = document.getElementById('submitButton');
+			var nameField = document.querySelector('input[name="name"]');
+			var emailField = document.querySelector('input[name="email"]');
+			var messageField = document.querySelector('textarea[name="message"]');
+			
+			// Cambiar texto del botón a "ENVIANDO TICKET"
+			button.value = 'ENVIANDO TICKET';
+			
+			// Aplicar transición de 2.5 segundos
+			button.style.transition = 'all 2.5s ease';
+
+			// Esperar 2.5 segundos antes de volver a "ENVIAR TICKET"
+			setTimeout(function() {
+				button.value = 'Ya has enviado un ticket.';
+				
+				// Vaciar los campos con una transición
+				nameField.style.transition = 'all 2.5s ease';
+				emailField.style.transition = 'all 2.5s ease';
+				messageField.style.transition = 'all 2.5s ease';
+
+				nameField.value = '';
+				emailField.value = '';
+				messageField.value = '';
+			}, 2500);
+		}
+		</script>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
